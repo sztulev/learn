@@ -1,1 +1,1 @@
-[Javascript](https://github.com/sztulev/learn/wiki/Javascript)
+## [Javascript Wiki Page](https://github.com/sztulev/learn/wiki/Javascript)
