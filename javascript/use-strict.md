@@ -1,3 +1,5 @@
+# Use Strict 
+
 ## Enabling Strict mode
 
 ### Globally
