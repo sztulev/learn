@@ -1,1 +1,1 @@
-## [Javascript Learning Materials](javascript.md)
+## [Javascript Learning Materials](javascript/README.md)
