@@ -1,5 +1,7 @@
 # Array Helpers
 
+<reduce>
+
 ## reduce()
 The __reduce()__ method executes a reducer function (that you provide) on each member of the array resulting in a single output value.
 ```
