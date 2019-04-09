@@ -4,7 +4,6 @@
 <https://enthuware.com/resources/new-topics-in-ocajp-11-ocjp-11>
 
 1. __private methods in interfaces__
-
 You have already seen default and static methods in interfaces in Java 8. There was a serious shortcoming with these methods. If you have even a couple of default/static methods in an interface with a lot of common code, you cannot refactor the common code into a single helper method without exposing that helper method to the general public because interface rules require all methods in an interface to be public. Java 9 solves this problem by relaxing this rule. It allows you to have private methods in an interface. Since OCAJP 8 covers default and static methods, OCAJP 11 will most certainly require you to know about private methods as well.
 
 2. __Collection Factory methods__
