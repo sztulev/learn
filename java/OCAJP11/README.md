@@ -1,4 +1,4 @@
-# OCAJP 11
+# Java SE 11 Programmer I
 
 ## Potential new topics 
 <https://enthuware.com/resources/new-topics-in-ocajp-11-ocjp-11>
