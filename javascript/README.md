@@ -14,5 +14,7 @@
 
 
 ## My Notes
-* <https://github.com/sztulev/learn/wiki/Javascript-Array-Helpers>
-* <https://github.com/sztulev/learn/wiki/Use-Strict>
+* [Array Helpers](array-helpers.md)
+* [Use Strict](use-strict.md)
+* [this](this.md)
+
