@@ -69,10 +69,11 @@ productInfos.forEach(prod -> System.out.println("name = " + prod.name + ", total
 ```
 
 ## Local Variable Syntax for Lambda Parameters
-As of Java 11 the below syntax is supported. This makes the usage of var uniform in both local variables and lambda parameters.
+As of Java 11 the below syntax is supported. This makes the usage of _var_ uniform in both local variables and lambda parameters.
+
 `(var s1, var s2) -> s1 + s2`
 
-### We can use modifiers with __var__:
+### We can use modifiers with _var_:
 `(@Nonnull var s1, @Nullable var s2) -> s1 + s2`
 __We cannot use such annotations without specifying the types.__
 
