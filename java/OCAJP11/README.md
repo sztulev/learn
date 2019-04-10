@@ -4,7 +4,7 @@
 ## Exam Topics
 
 ### Understanding Java Technology  and environment
-* Describe Java Technology and the Java development environment
+* [Describe Java Technology and the Java development environment](variables.md)
 * Identify key features of the Java language
 
 ### Working With Java Primitive Data Types and String APIs
