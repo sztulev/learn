@@ -4,11 +4,11 @@
 ## Exam Topics
 
 ### Understanding Java Technology  and environment
-* [Describe Java Technology and the Java development environment](variables.md)
+* Describe Java Technology and the Java development environment
 * Identify key features of the Java language
 
 ### Working With Java Primitive Data Types and String APIs
-* Declare and initialize variables (including casting and promoting primitive data types)
+* [Declare and initialize variables (including casting and promoting primitive data types)](variables.md)
 * Identify the scope of variables
 * Use local variable type inference
 * Create and manipulate Strings
