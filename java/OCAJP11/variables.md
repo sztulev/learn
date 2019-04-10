@@ -48,6 +48,8 @@ int i3; i4; // Compile error: i4 is missing type
 * Class: static
 
 ### Default initial values
+Type | Default value
+--- | --- 
 boolean | false 
 byte, short, int, long | 0 
 float, double | 0.0 
