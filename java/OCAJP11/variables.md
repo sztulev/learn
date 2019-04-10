@@ -31,7 +31,8 @@ s1= "text";
 String s1="text"
 ```
 
-# Declare and initialize multiple variables
+## Declare and initialize multiple variables
+You can declare and initialize multiple variables in the same statement. 
 ```
 boolean b1, b2;  // Valid
 String s1 = "1", s2; // Valid, only s1 is initialized
@@ -40,4 +41,15 @@ int i1; int i2; // Valid. It's two statements.
 int i3; i4; // Compile error: i4 is missing type
 ```
 
+## Variable scope
 
+* Local: defined within a method, including method parameters
+* Instance: fields
+* Class: static
+
+### Default initial values
+| boolean | false |
+| byte, short, int, long | 0 |
+| float, double | 0.0 |
+| char | '\u0000' |
+| any object ref | null| 
