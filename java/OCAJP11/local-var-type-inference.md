@@ -5,10 +5,10 @@ var userChannels = new HashMap<User, List<String>>();
 var channels = lookupUserChannels("Tom");
 ```
 
-### Where can’t you use local variable type inference?
-* Fields and method signatures
-* Without explicit initialization
-* Initialized to null
+### Cannot use local variable type inference:
+* For fields and method signatures `public long process(var list) { }`
+* Without explicit initialization `var x;`
+* When Initialized to null `var x = null;`
 
 ### Type Inference with Non-Denotable Types
 
