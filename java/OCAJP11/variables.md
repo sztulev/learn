@@ -34,6 +34,33 @@ s1= "text";
 
 String s1="text"; 
 ```
+
+### Default initial values
+Type | Default value
+--- | --- 
+boolean | false 
+byte, short, int, long | 0 
+float, double | 0.0 
+char | '\u0000' 
+any object ref | null
+
+
+## Declare and initialize multiple variables
+You can declare and initialize multiple variables in the same statement. 
+```
+boolean b1, b2;  // Valid
+
+String s1 = "1", s2; // Valid, only s1 is initialized
+
+double d1, double d2; // Compile error: must not repeat type in a single statement
+
+int i1; int i2; // Valid. It's two statements.
+
+int i3; i4; // Compile error: i4 is missing type
+```
+
+## Literals
+
 ### Hexadecimal, Octal and Binary literals
 ```
 int dec = 110; // no prefix --> decimal literal
@@ -65,22 +92,8 @@ __Placement of underscore is invalid:__
 * Prior to an F or L suffix (e.g. 1.23_F or 9999999_L are not valid)
 * In positions where a string of digits is expected (e.g. 0_xFFFF is not valid)
 
-## Declare and initialize multiple variables
-You can declare and initialize multiple variables in the same statement. 
-```
-boolean b1, b2;  // Valid
-
-String s1 = "1", s2; // Valid, only s1 is initialized
-
-double d1, double d2; // Compile error: must not repeat type in a single statement
-
-int i1; int i2; // Valid. It's two statements.
-
-int i3; i4; // Compile error: i4 is missing type
-```
 
 ## Variable scope
-
 * Local: defined within a method or in a block of code ({}), including method parameters
 * Instance: fields
 * Class: static
@@ -104,11 +117,3 @@ public void something(boolean b1) {
 System.out.println(i1); // Compile error: variable out of scope
 ```
 
-### Default initial values
-Type | Default value
---- | --- 
-boolean | false 
-byte, short, int, long | 0 
-float, double | 0.0 
-char | '\u0000' 
-any object ref | null
