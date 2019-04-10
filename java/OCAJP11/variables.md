@@ -11,9 +11,17 @@ i2; // Compile error - missing type
 ```
 
 ### Identifier names 
+* Case-sensitive
 * Must begin with letter, or $ or _
 * Subsequent characters may be numbers
 * Cannot use any Java reserved keyword
+
+```
+3DPointClass // identifiers cannot begin with a number
+hollywood@vine // @ is not a letter, digit, $ or _
+*$coffee // * is not a letter, digit, $ or _
+public // public is a reserved word 
+```
 
 ## Initialize variables
 ```
