@@ -10,7 +10,7 @@
 ### Working With Java Primitive Data Types and String APIs
 * [Declare and initialize variables (including casting and promoting primitive data types)](variables.md)
 * Identify the scope of variables
-* Use local variable type inference
+* [Use local variable type inference](local-var-type-inference.md)
 * Create and manipulate Strings
 * Manipulate data using the StringBuilder class and its methods
 
