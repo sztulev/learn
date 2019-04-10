@@ -34,8 +34,15 @@ s1= "text";
 
 String s1="text"; 
 ```
+### Hexadecimal, Octal and Binary literals
+```
+int dec = 110; // no prefix --> decimal literal
+int bin = 0b1101110; // '0b' prefix --> binary literal
+int oct = 0156; // '0' prefix --> octal literal
+int hex = 0x6E; // '0x' prefix --> hexadecimal literal
+```
 
-### Using literals
+### Using underscore
 You can use one or more underscores _ for separating groups of digits in a primitive
 number literal to improve their readability.
 ```
@@ -52,6 +59,7 @@ short binary= 0b0_1_0_1;
 int octal = 07_7_7_7_7_7_7_7_0;
 long hexBytes = 0xFF_EC_DE_5E;
 ```
+__Placement of underscore is invalid:__
 * At the beginning or end of a number (e.g. _123 or 123_ are not valid)
 * Adjacent to a decimal point in a floating point literal (e.g. 1._23 or 1_.23 are not valid)
 * Prior to an F or L suffix (e.g. 1.23_F or 9999999_L are not valid)
