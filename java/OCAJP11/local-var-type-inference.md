@@ -75,11 +75,12 @@ As of Java 11 the below syntax is supported. This makes the usage of _var_ unifo
 
 ### We can use modifiers with _var_:
 `(@Nonnull var s1, @Nullable var s2) -> s1 + s2`
-__We cannot use such annotations without specifying the types.__
+
+__Note:__ we cannot use such annotations without specifying the types.
 
 ### Limitations
-* Cannot use var for some parameters and skip for others `(var s1, s2) -> s1 + s2   // Error`   
-* Cannot mix var with explicit types `(var s1, String s2) -> s1 + s2 // Error`
-* Can skip the parentheses in single parameter `var s1 -> s1.toUpperCase() // Error`
+* Cannot use var for some parameters and skip for others `(var s1, s2) -> s1 + s2   // Compile error`   
+* Cannot mix var with explicit types `(var s1, String s2) -> s1 + s2 // Compile error`
+* Can skip the parentheses in single parameter `var s1 -> s1.toUpperCase() // Compile error`
 
 
