@@ -11,8 +11,8 @@
 * [Declare and initialize variables (including casting and promoting primitive data types)](variables.md)
 * [Identify the scope of variables](variable-scope.md)
 * [Use local variable type inference](local-var-type-inference.md)
-* Create and manipulate Strings
-* Manipulate data using the StringBuilder class and its methods
+* [Create and manipulate Strings](strings.md)
+* [Manipulate data using the StringBuilder class and its methods](StringBuilder.md)
 
 ### Working with Java Arrays
 * Declare, instantiate, initialize and use a one-dimensional array
