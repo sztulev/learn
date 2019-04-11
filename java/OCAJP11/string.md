@@ -67,9 +67,80 @@ Note that calling _toString()_ on a String will return the same object.
 ```
 String s1 = "ab";
 String s2 = "ab";
+String s3 = new String("ab");
 System.out.println(s1==s2.toString()); // true
+System.out.println(s1==s3.toString()); // false
+```
+## Important String Methods
+
+### int length()
+returns the number of characters in the String
+
+### char charAt(int index)
+queries the character is at a specific index
+```
+String string = "animals";
+System.out.println(string.charAt(0)); // a
+System.out.println(string.charAt(6)); // s
+System.out.println(string.charAt(7)); // java.lang.StringIndexOutOfBoundsException: String index out of range: 7
+```
+### indexOf()
+finds the first index that matches the desired value. __It returns –1 when no match is found.__
+```
+int indexOf(char ch)
+int indexOf(char ch, index fromIndex)
+int indexOf(String str)
+int indexOf(String str, index fromIndex)
+```
+### substring()
+returns parts of the string. The first parameter is the index to start with for the returned string.
+```
+int substring(int beginIndex)
+int substring(int beginIndex, int endIndex)  // endIndex not included => allowed to be 1 past the end of the sequence
+```
+
+```
+String string = "animals";
+System.out.println(string.substring(3, 3)); // empty string
+System.out.println(string.substring(3, 2)); // throws exception
+System.out.println(string.substring(3, 8)); // throws exception
+```
+### toLowerCase() and toUpperCase()
+```
+String toLowerCase(String str)
+String toUpperCase(String str)
+```
+### equals() and equalsIgnoreCase()
+checks whether two String objects contain exactly the same characters in the same order.
+```
+boolean equals(String str)
+boolean equalsIgnoreCase(String str)
+```
+### startsWith() and endsWith()
+look at whether the provided value matches part of the String. case-sensitive
+```
+boolean startsWith(String prefix)
+boolean endsWith(String suffix)
+```
+### contains()
+case-sensitive search for matches in the String
+```
+boolean contains(String str)
+```
+### replace()
+Does a simple search and replace on the string.
+```
+String replace(char oldChar, char newChar)
+String replace(CharSequence oldChar, CharSequence newChar)
+```
+### trim()
+removes whitespace from the beginning and end of a String.
+`public String trim()`
+
+## Method chaining
+```
+String result = "AniMaL ".trim().toLowerCase().replace('a', 'A');
+System.out.println(result); // "Animal"
 ```
 
 
-
-        
