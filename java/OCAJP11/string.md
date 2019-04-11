@@ -45,4 +45,31 @@ String s3 = new String("Fluffy");
 System.out.println(s1==s2); // true
 System.out.println(s1==s3); // false
 ```
+
+__The string pool contains literal values that appear in your program.__  
+
+```
+String s1 = "ab";
+var s4 = new Object(){
+    String a = "a", b="b";
+    public String toString() {
+        return a+b;
+    }
+};
+
+System.out.println(s1.equals(s4.toString())); // true
+System.out.println(s1==s4.toString());  // false
+```
+
+For example, _s1_ is a literal and therefore goes into the string pool. _s4.toString()_ is a string
+but not a literal, so it does not go into the string pool. 
+Note that calling _toString()_ on a String will return the same object.
+```
+String s1 = "ab";
+String s2 = "ab";
+System.out.println(s1==s2.toString()); // true
+```
+
+
+
         
