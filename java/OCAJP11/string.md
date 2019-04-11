@@ -41,7 +41,8 @@ System.out.println(s1==s4.toString());  // false
 
 For example, _s1_ is a literal and therefore goes into the string pool. _s4.toString()_ is a string
 but not a literal, so it does not go into the string pool. 
-Note that calling _toString()_ on a String will return the same object.
+
+__Note__ that calling _toString()_ on a String will return the same object.
 ```
 String s1 = "ab";
 String s2 = "ab";
