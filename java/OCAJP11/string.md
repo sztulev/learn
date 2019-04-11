@@ -34,5 +34,15 @@ smaller, and you cannot change one of the characters inside it.
 * Also, immutable classes in Java are fi nal, and subclasses can’t add mutable behavior.
 
 ## String Pools
-String name = "Fluffy";
-String name = new String("Fluffy");
+Java realizes that many strings repeat in the program and solves this issue by reusing common ones. The 
+string pool, also known as the intern pool, is a location in the Java virtual machine (JVM)
+that collects all these strings.
+```
+String s1 = "Fluffy";
+String s2 = "Fluffy";
+String s3 = new String("Fluffy");
+
+System.out.println(s1==s2); // true
+System.out.println(s1==s3); // false
+```
+        
