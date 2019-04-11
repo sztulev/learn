@@ -13,7 +13,8 @@ the + operator can be used in two ways within the same line of code
 3. The expression is evaluated left to right. 
 ```
 System.out.println("a" + "b" + 3); // ab3
-System.out.println(1 + 2 + "c"); // 3c
+System.out.println("a" + 1 + 2);   // a12
+System.out.println(1 + 2 + "c");   // 3c
 
 String s = "1"; // s holds "1"
 s += "2"; // s currently holds "12"
