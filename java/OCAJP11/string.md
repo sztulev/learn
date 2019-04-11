@@ -18,7 +18,7 @@ that collects all these strings.
 ```
 String s1 = "Fluffy";
 String s2 = "Fluffy";
-String s3 = new String("Fluffy");
+String s3 = new String("Fluffy"); // force JVM to not use String Pool
 
 System.out.println(s1==s2); // true
 System.out.println(s1==s3); // false
