@@ -6,6 +6,7 @@ String name = new String("Fluffy");
 ```
 
 ## Concatentation
+the + operator can be used in two ways within the same line of code
 
 1. If both operands are numeric, + means numeric addition.  `System.out.println(1 + 2); // 3`
 2. If either operand is a String, + means concatenation.  `System.out.println("a" + "b"); // ab`
